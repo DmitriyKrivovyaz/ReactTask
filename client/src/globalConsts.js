@@ -37,6 +37,10 @@ const defaultTimeOptions = {
   minute: '2-digit'
 };
 
+const hoursOptions = {
+  hour: 'numeric',
+}
+
 const dateFormat = 'en-US';
 
 const temperatureUnits = '°C';
@@ -55,6 +59,12 @@ const showPreloaderTimeout = 1000;
 
 const updatingTimeInterval = 10000;
 
+const AnteMeridianAbbreviation = 'AM';
+
+const postMeridianAbbreviation = 'AM';
+
+const middayHours = 12;
+
 export {
   themes,
   bgImages,
@@ -68,5 +78,9 @@ export {
   startLengthToSearchCities,
   feedbackFormInitialValues,
   showPreloaderTimeout,
-  updatingTimeInterval
+  updatingTimeInterval,
+  hoursOptions,
+  AnteMeridianAbbreviation,
+  postMeridianAbbreviation,
+  middayHours
 };
