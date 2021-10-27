@@ -9,8 +9,8 @@ import PropTypes from 'prop-types';
 import { getWeatherIcon } from '../../../services/weatherIconService';
 
 function HourlyForecast({ forecast }) {
-  const {time, hours, dayTime} = formatDate(forecast.time);
-  const weatherIcon = getWeatherIcon(forecast.symbolPhrase, hours, dayTime)
+  const { time, hours, dayTime } = formatDate(forecast.time);
+  const weatherIcon = getWeatherIcon(forecast.symbolPhrase, hours, dayTime);
 
   return (
     <div className={classes.container}>

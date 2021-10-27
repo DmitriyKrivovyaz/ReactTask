@@ -9,7 +9,7 @@ import { getWeatherIcon } from '../../../services/weatherIconService';
 
 function DailyForecast({ forecast }) {
   const date = formatDate(forecast.date, dailyWeatherDateOptions).date;
-  const weatherIcon = getWeatherIcon(forecast.symbolPhrase)
+  const weatherIcon = getWeatherIcon(forecast.symbolPhrase);
 
   return (
     <div className={classes.container}>

@@ -38,8 +38,8 @@ const defaultTimeOptions = {
 };
 
 const hoursOptions = {
-  hour: 'numeric',
-}
+  hour: 'numeric'
+};
 
 const dateFormat = 'en-US';
 
