@@ -63,7 +63,7 @@ const AnteMeridianAbbreviation = 'AM';
 
 const postMeridianAbbreviation = 'AM';
 
-const middayHours = 12;
+const middayHours = 11;
 
 export {
   themes,

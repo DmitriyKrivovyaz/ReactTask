@@ -29,14 +29,9 @@ export const nightlyWeatherIcons = {
   cloudy: overcast
 };
 
-export const getWeatherIcon = (
-  symbolPhrase,
-  currentHours = middayHours,
-  dayPart = postMeridianAbbreviation
-) => {
-  return (((currentHours >= 1 && currentHours <= 6) || currentHours == 12) &&
-    dayPart == AnteMeridianAbbreviation) ||
-    (currentHours >= 9 && currentHours < 11 && dayPart == postMeridianAbbreviation)
-    ? nightlyWeatherIcons[symbolPhrase]
-    : dailyWeatherIcons[symbolPhrase];
+export const getWeatherIcon = (symbolPhrase, currentHours = middayHours, dayPart = postMeridianAbbreviation) => {
+  return (((currentHours >= 1 && currentHours <= 6) || currentHours == 12) && dayPart == AnteMeridianAbbreviation) ||
+         (currentHours >= 9 && currentHours < 11 && dayPart == postMeridianAbbreviation)
+         ? nightlyWeatherIcons[symbolPhrase]
+         : dailyWeatherIcons[symbolPhrase];
 };
