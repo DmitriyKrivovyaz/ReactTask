@@ -51,6 +51,10 @@ const feedbackFormInitialValues = {
   feedbackText: ''
 };
 
+const showPreloaderTimeout = 1000;
+
+const updatingTimeInterval = 10000;
+
 const API_WEATHER_ICON_URL = 'https://developer.foreca.com/static/images/symbols/'
 
 export {
@@ -65,5 +69,7 @@ export {
   searchCitiesTimout,
   startLengthToSearchCities,
   feedbackFormInitialValues,
+  showPreloaderTimeout,
+  updatingTimeInterval
   API_WEATHER_ICON_URL
 };

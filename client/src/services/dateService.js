@@ -13,5 +13,5 @@ export const formatDate = (
 };
 
 export const getCurrentTimeByTimeZone = timeZone => {
-  return new Date().toLocaleString(dateFormat, { ...timeOptions, timeZone: timeZone });
+  return new Date().toLocaleString(dateFormat, { timeZone: timeZone });
 };
